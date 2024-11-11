@@ -1,0 +1,37 @@
+<head>
+  <%# タイトルの出力 -%>
+  <% const pageTitle = data[slug].title ? `${data[slug].title} | ${data.common.siteName}`: data.common.siteName -%>
+  <%# 画像の出力 -%>
+  <% const image = data[slug].image ? data[slug].image : data.common.image -%>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no,email=no" />
+  <title><%= pageTitle %></title>
+  <meta name="description" content="<%= data[slug].description %>" />
+  <link rel="canonical" href="<%- data[slug].url %>" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="<%- data.common.favicon %>" />
+
+  <!-- apple-touch-icon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="<%- data.common.touchIcon %>" />
+
+  <!-- Open Graph Protocol -->
+  <meta property="og:locale" content="<%= data.common.locale %>" />
+  <meta property="og:url" content="<%- data[slug].url %>" />
+  <meta property="og:type" content="<%- data[slug].ogType %>" />
+  <meta property="og:title" content="<%= pageTitle %>" />
+  <meta property="og:description" content="<%= data[slug].description %>" />
+  <meta property="og:site_name" content="<%= data.common.siteName %>" />
+  <meta property="og:image" content="<%= image %>" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="<%= data.common.twitterCard %>" />
+  <meta name="twitter:site" content="<%= data.common.twitterSite %>" />
+  <meta name="twitter:title" content="<%= pageTitle %>" />
+  <meta name="twitter:description" content="<%= data[slug].description %>" />
+  <meta name="twitter:image" content="<%= image %>" />
+
+  <link rel="stylesheet" href="/assets/scss/style.scss" />
+  <script type="module" src="/assets/js/main.js"></script>
+</head>

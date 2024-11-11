@@ -1,0 +1,28 @@
+// --------------------
+// Utility / margin
+// --------------------
+
+// foundation/global内のグローバルファイルを一括読み込み
+@use "../../foundation/global-bundle" as *;
+
+// mapモジュール
+@use "sass:map";
+
+// 0~100まで処理を繰り返す
+@for $num from 0 through 100 {
+  .u-mt#{$num} {
+    margin-top: #{calc($num / 16) + "rem"} !important;
+  }
+
+  .u-pc-mt#{$num} {
+    @include mediaQuery(pc) {
+      margin-top: #{calc($num / 16) + "rem"} !important;
+    }
+  }
+
+  .u-sp-mt#{$num} {
+    @include mediaQuery(sp) {
+      margin-top: #{calc($num / 16) + "rem"} !important;
+    }
+  }
+}

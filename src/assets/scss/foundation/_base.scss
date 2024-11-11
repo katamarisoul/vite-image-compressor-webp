@@ -1,0 +1,139 @@
+// ---------------------
+// Foundation / base
+// ---------------------
+
+// ---- description ----
+// サイトを構成する上で、デザインの基本の下地、土台となるスタイルを定義
+// ・タグ自体にスタイルを定義
+// ・reset.cssで足りなかったスタイルを追加
+// ・基本の文字サイズやフォントファミリーなどの追加
+
+// foundation/global内のグローバルファイルを一括読み込み
+@use "./global-bundle" as *;
+
+* {
+  box-sizing: border-box;
+
+  // aspect-ratioのバグ対策 参考サイト: https://zenn.dev/kagan/articles/css-chrome-aspect-ratio
+  min-width: 0;
+
+  // Safari対策（clampを使用した時のバグ）
+  min-height: 0;
+  padding: 0;
+  margin: 0;
+
+  // スマホ表示の時、文字サイズが勝手に変更されないように制御 参考サイト: https://kasumiblog.org/table-fontsize-sp/
+  text-size-adjust: 100%;
+}
+
+html {
+  // スクロールのひっかかり、ガタツキ対策 参考サイト: https://design-webnote.com/css/cant-scroll/
+  overflow: visible;
+}
+
+body {
+  overflow-x: hidden;
+  word-wrap: break-word;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+small {
+  font-size: inherit;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th,
+td {
+  text-align: left;
+}
+
+td {
+  vertical-align: top;
+}
+
+strong,
+th,
+dt {
+  font-weight: normal;
+}
+
+address,
+em,
+cite {
+  font-style: normal;
+}
+
+a,
+input,
+button,
+textarea,
+select,
+label {
+  appearance: none;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+
+  // sp時に、発生する透明のフォーカスを無効化 参考サイト: https://www.memory-lovers.blog/entry/2020/01/27/180000
+  -webkit-tap-highlight-color: transparent;
+}
+
+button {
+  touch-action: manipulation;
+}
+
+summary {
+  // display: list-item;以外を指定してデフォルトの三角形アイコンを消去
+  display: block;
+}
+
+summary::-webkit-details-marker {
+  // Safariで表示されるデフォルトの三角形アイコンを消去
+  display: none;
+}
+
+dialog {
+  border: 0;
+}
+
+dialog::backdrop {
+  display: none;
+}
+
+input[type="file"]::file-selector-button {
+  width: 0;
+  padding: 0;
+  margin: 0;
+  visibility: hidden;
+  background: transparent;
+  border: 0 solid transparent;
+}
+
+[tabindex="-1"]:focus-visible {
+  outline: none !important;
+}
+
+[role="tabpanel"]:target {
+  display: revert;
+}
+
+[hidden]:not([hidden="until-found"]) {
+  display: none !important;
+}

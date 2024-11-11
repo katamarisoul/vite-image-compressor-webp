@@ -1,0 +1,21 @@
+// ------------------------------------
+// Foundation / global / breakpoint
+// ------------------------------------
+
+// ---- description ----
+// ブレイクポイントの管理
+
+@use "sass:map";
+
+$breakpoint-pc: "(min-width: 1024px)";
+$breakpoint-sp: "not all and (min-width: 1024px)";
+$breakpoint: (
+  pc: $breakpoint-pc,
+  sp: $breakpoint-sp,
+);
+
+@mixin mediaQuery($val) {
+  @media #{map.get($breakpoint, $val)} {
+    @content;
+  }
+}

@@ -1,0 +1,9 @@
+// -------------------
+// Project / empty
+// -------------------
+
+// foundation/global内のグローバルファイルを一括読み込み
+@use "../../foundation/global-bundle" as *;
+
+// mapモジュール
+@use "sass:map";

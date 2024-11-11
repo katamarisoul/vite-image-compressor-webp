@@ -1,0 +1,12 @@
+// ------------------------------
+// Foundation / global-bundle
+// ------------------------------
+
+// ---- description ----
+// Foundation/global内のグローバルファイルを
+// バンドルして一括で読み込むための設定ファイル
+
+@forward "global/breakpoint";
+@forward "global/function";
+@forward "global/mixin";
+@forward "global/variable";

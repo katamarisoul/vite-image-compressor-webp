@@ -1,0 +1,24 @@
+// --------------
+// style.scss
+// --------------
+
+// external
+@use "destyle.css/destyle.min.css"; // reset.css
+
+// foundation
+@use "foundation/css-variable"; // css変数
+@use "foundation/keyframes"; // @keyframes
+@use "foundation/base"; // 追記スタイル
+@use "foundation/tag/*"; // タグ自体にスタイルを定義している記述
+
+// layout
+@use "layout/*";
+
+// component
+@use "object/component/*";
+
+// project
+@use "object/project/*";
+
+// utility
+@use "object/utility/*";

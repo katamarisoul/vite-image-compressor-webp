@@ -1,0 +1,18 @@
+// -----------------------------
+// Foundation / css-variable
+// -----------------------------
+
+// ---- description ----
+// css変数の管理
+
+// foundation/global内のグローバルファイルを一括読み込み
+@use "./global-bundle" as *;
+
+// css変数
+:root {
+  // PC時のブレイクポイント。JavaScript側で取得して使用する。
+  --breakpoint-pc: #{$breakpoint-pc};
+
+  // SP時のブレイクポイント。JavaScript側で取得して使用する。
+  --breakpoint-sp: #{$breakpoint-sp};
+}

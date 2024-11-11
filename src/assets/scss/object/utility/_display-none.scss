@@ -1,0 +1,25 @@
+// --------------------------
+// Utility / display-none
+// --------------------------
+
+// foundation/global内のグローバルファイルを一括読み込み
+@use "../../foundation/global-bundle" as *;
+
+// mapモジュール
+@use "sass:map";
+
+.u-dn {
+  display: none !important;
+}
+
+@include mediaQuery(pc) {
+  .u-pc-dn {
+    display: none !important;
+  }
+}
+
+@include mediaQuery(sp) {
+  .u-sp-dn {
+    display: none !important;
+  }
+}

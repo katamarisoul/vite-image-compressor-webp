@@ -1,0 +1,22 @@
+// ----------------------------------
+// Foundation / global / variable
+// ----------------------------------
+
+@use "sass:map";
+
+// ---- description ----
+// グローバルで使用するSass変数の管理
+
+// 本番環境のURL
+$URL: "";
+
+// 開発環境のURL
+$devURL: "";
+
+// z-indexの管理
+$zIndex: (
+  empty: 0,
+);
+
+// FLOCSSの接頭辞「c-」「p-」を除外する変数
+$notFLOCSS: ':not([class^="c-"], [class^="p-"])';

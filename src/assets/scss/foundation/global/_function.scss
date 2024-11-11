@@ -1,0 +1,36 @@
+// ----------------------------------
+// Foundation / global / function
+// ----------------------------------
+
+// ---- description ----
+// グローバルで使用するSass関数（@function）の管理
+
+// 単位をremに変換する関数
+@function rem($value) /* (値) */ {
+  @return #{calc($value / 16) + "rem"};
+}
+
+// 単位を%に変換する関数
+@function percent($value, $Width) /* (値, 基準となる幅) */ {
+  @return #{calc($value / $Width * 100) + "%"};
+}
+
+// 単位をvwに変換する関数
+@function vw($value, $Width) /* (値, 基準となる幅) */ {
+  @return #{calc($value / $Width * 100) + "vw"};
+}
+
+// 単位をvhに変換する関数
+@function vh($value, $Width) /* (値, 基準となる幅) */ {
+  @return #{calc($value / $Width * 100) + "vh"};
+}
+
+// clampを自動計算する関数
+@function clamp-calc($minSize, $minWidth, $maxSize, $maxWidth) /* (最小サイズ, 最小サイズ時のウィンドウ幅, 最大サイズ, 最大サイズ時のウィンドウ幅) */ {
+  $ratio: calc(($maxSize - $minSize) / ($maxWidth - $minWidth));
+  $vwValue: ($ratio * 100) * 1vw;
+  $remValue: calc(($minWidth * -1 * $ratio + $minSize) / 16) + "rem";
+
+  // clampの値を計算して返す
+  @return clamp(#{calc($minSize / 16)}rem, #{$remValue} + #{$vwValue}, #{calc($maxSize / 16)}rem);
+}
