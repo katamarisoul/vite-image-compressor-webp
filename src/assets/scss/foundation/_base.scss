@@ -138,6 +138,6 @@ input[type="file"]::file-selector-button {
   display: none !important;
 }
 
-[tabindex='-1']:focus-visible {
+[tabindex="-1"]:focus-visible {
   outline: none !important;
 }

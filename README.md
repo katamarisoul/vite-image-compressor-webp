@@ -1,23 +1,28 @@
 # vite-project
 
 ## 作業手順
-作業に着手する際は、まずNode.jsのバージョンを`v20.12.2`に合わせ、  
-`npm install`でパッケージをインストールしてから着手してください。  
 
-作業内容を確認したい場合は、`npm run dev`で開発サーバーが自動で立ち上がります。  
+作業に着手する際は、まずNode.jsのバージョンを`v20.12.2`に合わせ、  
+`npm install`でパッケージをインストールしてから着手してください。
+
+作業内容を確認したい場合は、`npm run dev`で開発サーバーが自動で立ち上がります。
 
 Gitにコミットする際は、`npm run build`でコードチェック＆ビルド後にコミットしてください。
 
 ## Node.js
+
 このプロジェクトで使用しているNode.jsのバージョンは、`v20.12.2`になります。  
-Viteを動作させるためにNode.jsが必要になるので、未インストールの場合はインストールしてください。  
+Viteを動作させるためにNode.jsが必要になるので、未インストールの場合はインストールしてください。
 
 ### 参考サイト
-- [Homebrewのインストール＆使用方法](https://www.kikagaku.co.jp/kikagaku-blog/homebrew-install-howto/#i-5)　
-- [【Mac】Node開発環境のアップデート](https://0forest.com/npm-update/)　
+
+- [Homebrewのインストール＆使用方法](https://www.kikagaku.co.jp/kikagaku-blog/homebrew-install-howto/#i-5)
+- [【Mac】Node開発環境のアップデート](https://0forest.com/npm-update/)
 
 ## npmコマンド一覧
+
 以下のコマンドを使用してViteを操作します。
+
 - `npm install`: 必要なパッケージをインストール
 - `npm run dev`: 開発サーバーを起動し、srcファイル内をブラウザに表示
 - `npm run build`: すべてのリンターとコード整形を実行後、srcファイルをdistファイルにビルド（リンターでエラーが出た場合は、ビルドが実行されません。）
@@ -28,6 +33,7 @@ Viteを動作させるためにNode.jsが必要になるので、未インスト
 - `npm run es:lint`: ESLint（JavaScriptのリンター）を実行
 
 ## 使用技術一覧
+
 - **Vite**: ビルドツール
 - **EJS**: HTMLテンプレートエンジン
 - **SCSS**: CSSの拡張言語
@@ -39,13 +45,17 @@ Viteを動作させるためにNode.jsが必要になるので、未インスト
 - **vite-plugin-webp-and-path**: ビルド後にjpg・pngをwebpに変換し、読み込みパスをwebpに書き換える
 
 ## CSS設計
+
 CSS設計はFLOCSSを使用しています。  
 詳しくは以下を参考にしてください。
+
 ### 参考サイト
+
 - [FLOCSSドキュメント](https://github.com/hiloki/flocss)
 - [FLOCSSを使って破綻しにくいCSS設計を！](https://haniwaman.com/flocss/)
 
 ## ディレクトリ構成
+
 基本的なディレクトリ構成は以下になります。  
 プロジェクトが進みにつれて多少修正される場合があります。
 
