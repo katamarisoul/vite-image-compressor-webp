@@ -137,3 +137,7 @@ input[type="file"]::file-selector-button {
 [hidden]:not([hidden="until-found"]) {
   display: none !important;
 }
+
+[tabindex='-1']:focus-visible {
+  outline: none !important;
+}
