@@ -18,5 +18,5 @@ $zIndex: (
   empty: 0,
 );
 
-// FLOCSSの接頭辞「c-」「p-」を除外する変数
-$notFLOCSS: ':not([class^="c-"], [class^="p-"])';
+// FLOCSSの接頭辞「l-」「p-」「c-」を除外する変数
+$notFLOCSS: ':not([class^="l-"], [class^="p-"], [class^="c-"])';
