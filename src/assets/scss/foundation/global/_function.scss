@@ -10,6 +10,11 @@
   @return #{calc($value / 16) + "rem"};
 }
 
+// 単位をemに変換する関数
+@function rem($value) /* (値) */ {
+  @return #{calc($value / 16) + "em"};
+}
+
 // 単位を%に変換する関数
 @function percent($value, $Width) /* (値, 基準となる幅) */ {
   @return #{calc($value / $Width * 100) + "%"};
