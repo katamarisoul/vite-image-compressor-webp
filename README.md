@@ -2,7 +2,7 @@
 
 ## 作業手順
 
-作業に着手する際は、まずNode.jsのバージョンを`v20.12.2`に合わせ、  
+まずNode.jsのバージョンを`v20.12.2`にしてください。  
 `npm install`でパッケージをインストールしてから着手してください。
 
 作業内容を確認したい場合は、`npm run dev`で開発サーバーが自動で立ち上がります。
@@ -51,8 +51,9 @@ CSS設計はFLOCSSを使用しています。
 
 ### 参考サイト
 
-- [FLOCSSドキュメント](https://github.com/hiloki/flocss)
+- [公式ドキュメント](https://github.com/hiloki/flocss)
 - [FLOCSSを使って破綻しにくいCSS設計を！](https://haniwaman.com/flocss/)
+- [【暫定】コーダー歴3年で辿り着いた保守しやすいコーディング手法](https://zenn.dev/haniwaman/articles/bf392f397c8db7341881)
 
 ## ディレクトリ構成
 
@@ -61,9 +62,9 @@ CSS設計はFLOCSSを使用しています。
 
 ```
 vite-project/
-  |─public/  # Viteの処理対象外にしたいファイルを格納する
   |─dist/ 　 # ビルド後に生成される公開用のファイルが格納される
   └─src/　   # 作業フォルダ
+      |─public/  # Viteの処理対象外にしたいファイルを格納する（pdfなどはこちらに格納してください）
       ├─index.html  # ホームページ
       ├─hoge/  # 任意のディレクトリ名
       |    └─hoge.html  # 任意のhtmlファイル
