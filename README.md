@@ -42,7 +42,7 @@ Viteを動作させるためにNode.jsが必要になるので、未インスト
 - **Stylelint**: CSSのコード品質を保つためのリンター
 - **ESLint**: JavaScriptのコード品質を保つためのリンター
 - **Prettier**: コード整形ツール
-- **vite-plugin-webp-and-path**: ビルド後にjpg・pngをwebpに変換し、読み込みパスをwebpに書き換える
+- **vite-plugin-webp-and-path**: ビルド後に'jpg','jpeg',`png`形式の画像をwebpに変換し、読み込みパスをwebpに書き換える
 
 ## CSS設計
 
@@ -72,7 +72,7 @@ vite-project/
             ├─ejs/
             |   ├─layout/      # headerやfooterなどのレイアウトパーツを管理
             |   └─metaData.js  # head内のmeta情報を一括管理
-            ├─images/ # 画像（このフォルダに保存されている'jpg', 'jpeg', `png`形式の画像は、ビルド後にwebpへ自動変換されます）
+            ├─images/ # 画像（このフォルダに保存されている'jpg','jpeg',`png`形式の画像は、ビルド後にwebpへ自動変換されます）
             ├─js/
             |  ├─modules/    # ページ内共通で使用する関数を管理
             |  ├─pages/      # 特定ページでのみ使用する関数を管理
