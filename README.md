@@ -31,6 +31,7 @@ Viteを動作させるためにNode.jsが必要になるので、未インスト
 - `npm run markup:lint`: Markuplint（HTMLのリンター）を実行
 - `npm run style:lint`: Stylelint（SCSSのリンター）を実行
 - `npm run es:lint`: ESLint（JavaScriptのリンター）を実行
+- `npm run format`: Prettier（コード整形）を実行
 
 ## 使用技術一覧
 
