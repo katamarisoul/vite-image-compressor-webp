@@ -65,16 +65,13 @@ export default defineConfig({
            */
           let extension = assetInfo.name.split('.')[1];
 
-          // フォントファイルの場合
-          if (/ttf|otf|eot|woff|woff2/i.test(extension)) {
-            // フォルダ名をfontsに変更
-            extension = 'fonts';
-          }
+          // 画像ファイルまたは、フォントファイルの場合
+          if (/png|jpe?g|svg|gif|tiff|bmp|webp|avif|ico|ttf|otf|eot|woff|woff2/i.test(extension)) {
+            const originalFilePath = assetInfo.originalFileName;
+            const fileName = assetInfo.name;
+            const filePath = originalFilePath.replace(fileName, '');
 
-          // 画像ファイルの場合
-          if (/png|jpe?g|svg|gif|tiff|bmp|webp|avif|ico/i.test(extension)) {
-            // フォルダ名をimagesに変更
-            extension = 'images';
+            return `${filePath}[name][extname]`;
           }
 
           // ディレクトリを作成して返す
