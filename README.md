@@ -43,7 +43,7 @@ Viteを動作させるためにNode.jsが必要になるので、未インスト
 - **Stylelint**: CSSのコード品質を保つためのリンター
 - **ESLint**: JavaScriptのコード品質を保つためのリンター
 - **Prettier**: コード整形ツール
-- **vite-plugin-webp-and-path**: ビルド後のHTMLやCSS内で参照されている ".jpg"、".jpeg"、".png" 形式の画像を WebP 形式に圧縮し、それらの参照パスを WebP に書き換えます。
+- **vite-plugin-webp-and-path**: ビルド後のHTMLとCSS内で参照されている ".jpg"、".jpeg"、".png" 形式の画像を WebP 形式に圧縮し、それらの参照パスを WebP に書き換えます。
 
 ## CSS設計
 
