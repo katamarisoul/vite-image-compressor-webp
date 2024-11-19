@@ -73,7 +73,7 @@ vite-project/
             ├─ejs/
             |   ├─layout/      # headerやfooterなどのレイアウトパーツを管理
             |   └─metaData.js  # head内のmeta情報を一括管理
-            ├─images/ # 画像（このフォルダに保存されている'jpg','jpeg',`png`形式の画像は、ビルド後にwebpへ自動変換されます）
+            ├─images/ # 画像フォルダ
             ├─js/
             |  ├─modules/    # ページ内共通で使用する関数を管理
             |  ├─pages/      # 特定ページでのみ使用する関数を管理
