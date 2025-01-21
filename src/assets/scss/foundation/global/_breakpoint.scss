@@ -7,12 +7,19 @@
 
 @use "sass:map";
 
-$breakpoint-pc: "(min-width: 1024px)";
-$breakpoint-sp: "not all and (min-width: 1024px)";
-$breakpoint: (
-  pc: $breakpoint-pc,
-  sp: $breakpoint-sp,
-);
+// `sm`, `md, `lg`のサイズは、tailwindcssを参考にしている。（https://tailwindcss.com/docs/screens）
+$breakpoint-sm: "(min-width: 640px)";
+$breakpoint-md: "(min-width: 768px)";
+$breakpoint-lg: "(min-width: 1024px)";
+$breakpoint-xl: "(min-width: 1366px)";
+$breakpoint-2xl: "(min-width: 1920px)";
+$breakpoints: (
+  sm: $breakpoint-sm,
+  md: $breakpoint-md,
+  lg: $breakpoint-lg,
+  xl: $breakpoint-xl,
+  2xl: $breakpoint-2xl,
+) !default;
 
 @mixin mediaQuery($val) {
   @media #{map.get($breakpoint, $val)} {

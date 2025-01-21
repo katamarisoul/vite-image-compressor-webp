@@ -2,8 +2,5 @@
 // ES globals
 // --------------
 
-/** css変数からPCサイズのブレイクポイントを取得 */
-export const BREAKPOINT_PC = getComputedStyle(document.documentElement).getPropertyValue('--breakpoint-pc');
-
-/** css変数からSPサイズのブレイクポイントを取得 */
-export const BREAKPOINT_SP = getComputedStyle(document.documentElement).getPropertyValue('--breakpoint-sp');
+/** css変数からブレイクポイント`lg`を取得 */
+export const BREAKPOINT_lg = getComputedStyle(document.documentElement).getPropertyValue('--breakpoint-lg');

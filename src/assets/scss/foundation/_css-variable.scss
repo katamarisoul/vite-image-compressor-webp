@@ -10,9 +10,10 @@
 
 // css変数
 :root {
-  // PC時のブレイクポイント。JavaScript側で取得して使用する。
-  --breakpoint-pc: #{$breakpoint-pc};
-
-  // SP時のブレイクポイント。JavaScript側で取得して使用する。
-  --breakpoint-sp: #{$breakpoint-sp};
+  // ブレイクポイント。JavaScript側で取得して使用する。
+  --breakpoint-sm: #{$breakpoint-sm};
+  --breakpoint-md: #{$breakpoint-md};
+  --breakpoint-lg: #{$breakpoint-lg};
+  --breakpoint-xl: #{$breakpoint-xl};
+  --breakpoint-2xl: #{$breakpoint-2xl};
 }
