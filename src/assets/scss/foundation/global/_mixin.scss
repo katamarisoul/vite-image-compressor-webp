@@ -6,28 +6,10 @@
 // グローバルで使用する@mixinの管理
 
 // テキストに関連するスタイルを一括指定する
-@mixin text-setting-rem($fontSize, $lineHeight, $letterSpacing: null) /* (文字サイズ, 行の高さ, 字間) */ {
+@mixin text-setting($fontSize, $lineHeight, $letterSpacing: null) /* (文字サイズ, 行の高さ, 字間) */ {
   // 変数「$fontSize」が存在する場合
   @if $fontSize {
     font-size: #{calc($fontSize / 16) + "rem"};
-  }
-
-  // 変数「$lineHeight」が存在する場合
-  @if $lineHeight {
-    line-height: calc($lineHeight / $fontSize);
-  }
-
-  // 変数「$letterSpacing」が存在する場合
-  @if $letterSpacing {
-    letter-spacing: #{calc($letterSpacing / 1000) + "em"};
-  }
-}
-
-// テキストに関連するスタイルを一括指定する
-@mixin text-setting-em($fontSize, $lineHeight, $letterSpacing: null) /* (文字サイズ, 行の高さ, 字間) */ {
-  // 変数「$fontSize」が存在する場合
-  @if $fontSize {
-    font-size: #{calc($fontSize / 16) + "em"};
   }
 
   // 変数「$lineHeight」が存在する場合
