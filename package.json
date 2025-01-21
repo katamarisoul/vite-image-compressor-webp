@@ -35,7 +35,11 @@
     "vite-plugin-webp-and-path": "^0.1.4"
   },
   "dependencies": {
-    "destyle.css": "^4.0.1"
+    "@splidejs/splide": "^4.1.4",
+    "destyle.css": "^4.0.1",
+    "gsap": "^3.12.7",
+    "scroll-hint": "^1.2.9",
+    "swiper": "^8.4.7"
   },
   "browserslist": [
     "> 3% in JP",
