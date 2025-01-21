@@ -39,6 +39,14 @@ module.exports = {
     'scss/dollar-variable-pattern': null,
     'scss/at-mixin-pattern': null,
     'scss/at-function-pattern': null,
+    'at-rule-empty-line-before': [
+      'always',
+      {
+        except: ['blockless-after-blockless', 'first-nested'],
+        ignore: ['after-comment'],
+        ignoreAtRules: ['include', 'media'],
+      },
+    ],
   },
   // ルールを適用しないファイルを設定
   ignoreFiles: [],
