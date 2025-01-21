@@ -13,16 +13,4 @@
   .u-mt#{$num} {
     margin-top: #{calc($num / 16) + "rem"} !important;
   }
-
-  .u-pc-mt#{$num} {
-    @include mediaQuery(pc) {
-      margin-top: #{calc($num / 16) + "rem"} !important;
-    }
-  }
-
-  .u-sp-mt#{$num} {
-    @include mediaQuery(sp) {
-      margin-top: #{calc($num / 16) + "rem"} !important;
-    }
-  }
 }

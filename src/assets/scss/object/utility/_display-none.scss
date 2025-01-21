@@ -11,15 +11,3 @@
 .u-dn {
   display: none !important;
 }
-
-@include mediaQuery(pc) {
-  .u-pc-dn {
-    display: none !important;
-  }
-}
-
-@include mediaQuery(sp) {
-  .u-sp-dn {
-    display: none !important;
-  }
-}
