@@ -11,20 +11,14 @@
 // ---- description ----
 // 要素を非表示かつ、読み上げ可能な状態にするクラス
 
-// ---- reference ----
-// https://qiita.com/randy39/items/fca820d500dfe9ec1a52
-
 .u-visually-hidden {
-  position: fixed !important;
-  top: 0 !important;
-  left: 0 !important;
-  display: block !important;
-  width: 4px !important;
-  height: 4px !important;
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
   padding: 0 !important;
-  margin: 0 !important;
+  margin: -1px !important;
   overflow: hidden !important;
-  visibility: visible !important;
-  border: none !important;
-  opacity: 0 !important;
+  clip: rect(0 0 0 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
 }
