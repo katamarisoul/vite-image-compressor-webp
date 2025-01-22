@@ -22,7 +22,7 @@ $breakpoints: (
 ) !default;
 
 @mixin mediaQuery($val) {
-  @media #{map.get($breakpoint, $val)} {
+  @media #{map.get($breakpoints, $val)} {
     @content;
   }
 }
