@@ -11,3 +11,33 @@
 .u-dn {
   display: none !important;
 }
+
+.u-sm-dn {
+  @include mediaQuery(sm) {
+    display: none !important;
+  }
+}
+
+.u-md-dn {
+  @include mediaQuery(md) {
+    display: none !important;
+  }
+}
+
+.u-lg-dn {
+  @include mediaQuery(lg) {
+    display: none !important;
+  }
+}
+
+.u-xl-dn {
+  @include mediaQuery(xl) {
+    display: none !important;
+  }
+}
+
+.u-2xl-dn {
+  @include mediaQuery(2xl) {
+    display: none !important;
+  }
+}

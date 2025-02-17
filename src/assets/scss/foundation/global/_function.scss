@@ -2,9 +2,6 @@
 // Foundation / global / function
 // ----------------------------------
 
-// ---- description ----
-// グローバルで使用するSass関数（@function）の管理
-
 // 単位をremに変換する関数
 @function rem($value) /* (値) */ {
   @return #{calc($value / 16) + "rem"};
