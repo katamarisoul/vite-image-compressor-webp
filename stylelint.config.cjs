@@ -47,6 +47,7 @@ module.exports = {
         ignoreAtRules: ['include', 'media'],
       },
     ],
+    'declaration-empty-line-before': ['never'],
   },
   // ルールを適用しないファイルを設定
   ignoreFiles: [],
