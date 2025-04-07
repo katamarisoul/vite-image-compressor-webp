@@ -4,6 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "setup": "npm install",
     "dev": "vite --host",
     "build": "npm run lint && npm run format && vite build && prettier --write --ignore-path .prettierignore \"./dist/**/*.html\"",
     "preview": "vite preview",
