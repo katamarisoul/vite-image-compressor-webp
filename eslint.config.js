@@ -1,6 +1,6 @@
-// -----------------
-// ESLint.config
-// -----------------
+/* -----------------------------------------------
+  ESLint.config
+----------------------------------------------- */
 
 // 参考（ESLint Flat Config）
 // https://eslint.org/docs/latest/extend/plugin-migration-flat-config
