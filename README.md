@@ -2,28 +2,29 @@
 
 ## 作業手順
 
-まずNode.jsのバージョンを`v20.12.2`にしてください。  
-`npm install`でパッケージをインストールしてから着手してください。
+作業を開始する前に、まず `npm install` または `npm run setup` を実行して依存パッケージをインストールしてください。  
+もしNode.jsがインストールされていない場合は、インストールを行ってください。
 
-作業内容を確認したい場合は、`npm run dev`で開発サーバーが自動で立ち上がります。
+作業内容を確認したい場合は、`npm run dev` を実行して開発サーバーを立ち上げることができます。
 
-Gitにコミットする際は、`npm run build`でコードチェック＆ビルド後にコミットしてください。
+Gitにコミットする際は、必ず `npm run build` でコードチェックとビルドを行ってからコミットしてください。
 
 ## Node.js
 
-このプロジェクトで使用しているNode.jsのバージョンは、`v20.12.2`になります。  
-Viteを動作させるためにNode.jsが必要になるので、未インストールの場合はインストールしてください。
+このプロジェクトで使用しているNode.jsのバージョンは `v22.14.0`、npmのバージョンは `v10.9.2` です。  
+Viteを動作させるためにNode.jsが必要になるため、未インストールの場合はインストールしてください。  
+もしVoltaでNode.jsを管理している場合は、プロジェクトに指定したバージョンが自動で適用されます。
 
 ### 参考サイト
 
-- [Homebrewのインストール＆使用方法](https://www.kikagaku.co.jp/kikagaku-blog/homebrew-install-howto/#i-5)
-- [【Mac】Node開発環境のアップデート](https://0forest.com/npm-update/)
+- [Node.jsのバージョン管理はVoltaに決定](https://zenn.dev/aiueda/articles/7dcecaa05d4f24)
+- [WindowsでNode.jsのバージョン管理 - VOLTA v1.1.1](https://note.com/rurai/n/n47a3fb9c4508)
 
 ## npmコマンド一覧
 
 以下のコマンドを使用してViteを操作します。
 
-- `npm install`: 必要なパッケージをインストール
+- `npm run setup` または `npm install`: 必要なパッケージをインストール
 - `npm run dev`: 開発サーバーを起動し、srcファイル内をブラウザに表示
 - `npm run build`: すべてのリンターとコード整形を実行後、srcファイルをdistファイルにビルド（リンターでエラーが出た場合は、ビルドが実行されません。）
 - `npm run preview`: 開発サーバーを起動し、distファイルをブラウザに表示
@@ -65,7 +66,7 @@ CSS設計はFLOCSSを使用しています。
 vite-project/
   |─dist/ 　 # ビルド後に生成される公開用のファイルが格納される
   └─src/　   # 作業フォルダ
-      |─public/  # Viteの処理対象外にしたいファイルを格納する（pdfなどはこちらに格納してください）
+      |─public/  # Viteの処理対象外にしたいファイルを格納する（フォントやpdfなどはこちらに格納してください）
       ├─index.html  # ホームページ
       ├─hoge/  # 任意のディレクトリ名
       |    └─hoge.html  # 任意のhtmlファイル
