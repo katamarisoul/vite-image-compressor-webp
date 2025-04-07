@@ -46,5 +46,9 @@
     "> 3% in JP",
     "not IE 11",
     "last 1 versions"
-  ]
+  ],
+  "volta": {
+    "node": "22.14.0",
+    "npm": "10.9.2"
+  }
 }
